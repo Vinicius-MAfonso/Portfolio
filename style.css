@@ -87,14 +87,28 @@ header nav a:hover{
   padding: 3%;
   box-shadow: 1px 1px 3px black;
 }
+
 #habilidades{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #container-habilidades{
-  width: 65px;
+  flex-direction: row;
+  display: flex;
+  flex-wrap:wrap;
+
+}
+#habilidades{
+  display: flex;
   flex-direction: column;
+  align-items: center;
+}
+#habilidades img{
+  margin: 0px 15px;
+}
+#container-tecnologias{
+  flex-direction: row;
   display: flex;
   flex-wrap:wrap;
 }
