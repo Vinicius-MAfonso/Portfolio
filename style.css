@@ -10,7 +10,7 @@
 }
 /* Cabeçalho */
 header{
-  background: white url(images/background-header.jpg) no-repeat;
+  background: white url(images/background.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: #1C222E;
@@ -62,17 +62,19 @@ header nav a:hover{
 
 }
 /* Main */
-#container1{
+.flex{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+}
+#container1{
   justify-content: space-around;
-  background-color: #D9D9D9;
+  background-color: #d0d1d3;
   width: 100%;
-  height: 50vh;
+  padding: 50px;
 }
 #perfil{
-  width: 400px;
-  display: flex;
+  width: 500px;
   flex-direction: column;
 }
 #perfil h1{
@@ -80,37 +82,47 @@ header nav a:hover{
 }
 #perfil p{
   text-align: justify;
-  min-height: 300px;
-  min-width: 100px;
   background-color: white;
-  border-radius: 5px;
   padding: 3%;
   box-shadow: 1px 1px 3px black;
 }
-
-#habilidades{
-  display: flex;
+#habilidades{ 
   flex-direction: column;
-  align-items: center;
 }
 #container-habilidades{
   flex-direction: row;
-  display: flex;
-  flex-wrap:wrap;
-
-}
-#habilidades{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 #habilidades img{
   margin: 0px 15px;
 }
-#container-tecnologias{
-  flex-direction: row;
-  display: flex;
-  flex-wrap:wrap;
+/* Container 2 */
+#container2{
+  background: white url(images/background-invertido.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: space-around;
+}
+#container2 h1{
+  text-align: center;
+}
+#container-projetos{
+
+}
+#container2 div{
+  background-color: black;
+  width: 200px;
+  height: 200px;
+}
+
+
+
+/* Footer */
+footer{
+  background-color: #D9D9D9;
+  width: 100%;
+  padding: 50px;
 }
 
 
