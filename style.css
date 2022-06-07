@@ -4,15 +4,17 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-a{
+header a{
   text-decoration: none;
   color: black;
+  transition: all .5s;
+  padding: 0.5em;
 }
 header{
+  display: grid;
+  grid-template-rows: 10% 70%;
   height: 100vh;
   width: 100%;
-  display: grid;
-  grid-template-rows: 10% 70% 20%;
   background: white url(images/background.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -29,7 +31,11 @@ header nav ul{
   gap: 1.2em;
   list-style: none;
 }
-#container-nome{
+#contatos{
+  position: fixed;
+  top: 50%;
+}
+.container{
   display: flex;
   text-align: center;
   gap: 1.2em;
@@ -41,88 +47,95 @@ header h1{
   font-size: 2.5em;
 }
 /* Main */
-#perfil-habilidade{
+body{
+  background-image: linear-gradient(to right, #BBBCBE, #DCDDDF, #E7E8EA, #F0F1F3, #E8E9EB, #E6E7E9, #E2E3E5);
+}
+.containers{
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  height: auto;
-  padding: 50px;
   width: 100%;
-  background-image: linear-gradient(to right, #BBBCBE, #DCDDDF, #E7E8EA, #F0F1F3, #E8E9EB, #E6E7E9, #E2E3E5);
-  background-size: cover;
-  background-attachment: fixed;
+  height: auto;
+  padding: 20px;
+  color: #1C222E;
 }
 .cards{
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  align-items: center;
-  gap: 1.2em;
-  margin: 1em;
+  width: 330px;
+  height: auto;
+  word-wrap: normal;
+  font-size: 1.1em;
+  line-height: 1.6em;
   padding: 15px;
-}
-.content-container{
-  font-weight: 400;
-  font-size: 1.25em;
-  min-width: none;
-  min-height: none;
-  width: 400px;
-  height: 500px;
-  border-radius: 5px;
-  padding: 15px;
+  margin: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
 }
-#pessoal p{
-  line-height: 1.32em;
-  
+.cards h2{
+  text-align: center;
 }
+#perfil-habilidade{
+  background-size: cover;
+  background-attachment: fixed;
+}
+#perfil-habilidade article{
+  width: 400px;
+}
+
 #habilidade ul{
   list-style: none;
   line-height: 1.98em;
-  font-size: 1.20em;
 }
-.contaner-skills{
-  color: white;
-  width: 100%;
-  background-color: #7d7f81;
+/* Progress bars */
+.progress{
+  height: 0.3em;
+  background-color: #1C222E;
 }
 #html{
   width: 35%;
-  height: 0.3em;
-  background-color: #1C222E;
 }
 #css{
   width: 30%;
-  height: 0.3em;
-  background-color: #1C222E;
 }
 #js{
   width: 25%;
-  height: 0.3em;
-  background-color: #1C222E;
 }
 #python{
   width: 40%;
-  height: 0.3em;
-  background-color: #1C222E;
 }
 #php{
   width: 15%;
-  height: 0.3em;
-  background-color: #1C222E;
 }
 #sql{
   width: 15%;
-  height: 0.3em;
-  background-color: #1C222E;
 }
 #windows{
   width: 80%;
-  height: 0.3em;
-  background-color: #1C222E;
 }
 #linux{
   width: 20%;
-  height: 0.3em;
-  background-color: #1C222E;
 }
+/* Projetos */
+#projetos{
+  background: white url(images/background-invertido.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#projetos article{
+  background-color: #E6E7E9;
+  height: auto;
+  padding: 0px 0px 15px 0px;
+  gap: 15px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#projetos article h2{
+  text-align: center;
+  padding: 0px 10px;
+}
+#projetos article p{
+  padding: 0px 10px;
+}
+/* footer */
