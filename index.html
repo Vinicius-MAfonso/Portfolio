@@ -14,15 +14,16 @@
       <nav>
         <h1>VMA</h1>
         <ul>
-          <li><a href="#perfil">PERFIL</a></li>
+          <li><a href="#perfil-habilidade">PERFIL</a></li>
           <li><a href="#projetos">PROJETOS</a></li>
           <li><a href="#contatos">CONTATOS</a></li>
         </ul>
       </nav>
-      <article id="container-nome">
+      <div id="container-nome">
         <h1>Vinicius Mariano Afonso</h1>
         <h2>Estudante de Engenharia de Computação</h2>
-      </article>
+      </div>
+      <div></div>
     </header>
     <!-- Conteúdo -->
     <main>
@@ -30,28 +31,41 @@
       <section id="perfil-habilidade">
         <article id="pessoal" class="cards">
           <h2>Perfil</h2>
-          <p>
-            Sou estudante de Engenharia de Computação, sou apaixonado em
+          <p class="content-container">
+            Sou estudante de Engenharia de Computação, e apaixonado em
             programação, tenho muita vontade de aprender desenvolvimento Web e
-            estou lutando para focar meus estudos, atualmente estou estudando
-            HTML,CSS e JavaScript, mas tenho foco em Back-End, gosto de
+            estou lutando para focar meus estudos. Atualmente estou estudando
+            HTML,CSS e JavaScript, mas tenho foco em <br />Back-End, gosto de
             trabalhos em equipes e estou sempre disposto para ajudar todos que
-            estão ao meu alcance para aprendermos juntos. Atualmente trabalho na
-            Prefeitura Municipal de Hortolândia, já trabalhei realizando
-            atendimentos de suporte, e por enquanto aprendo e faço meus projetos
-            pessoais, para no futuro trabalhar como desenvolvedor de senioridade
-            júnior.
+            estão ao meu alcance para aprendermos juntos. <br />Atualmente
+            trabalho na Prefeitura Municipal de Hortolândia, já trabalhei
+            realizando atendimentos de suporte, e por enquanto estou aprendendo
+            e faço meus projetos pessoais, para no futuro trabalhar como
+            desenvolvedor de senioridade júnior.
           </p>
         </article>
         <article id="habilidade" class="cards">
           <h2>Habilidades</h2>
-          <ul>
+          <ul class="content-container">
+            <h3>Front-End</h3>
             <li>HTML</li>
+            <div class="contaner-skills" id="html"></div>
             <li>CSS</li>
+            <div class="contaner-skills" id="css"></div>
             <li>JavaScript</li>
+            <div class="contaner-skills" id="js"></div>
+            <h3>Back-End</h3>
             <li>Python</li>
+            <div class="contaner-skills" id="python"></div>
             <li>PHP</li>
+            <div class="contaner-skills" id="php"></div>
             <li>SQL</li>
+            <div class="contaner-skills" id="sql"></div>
+            <h3>Sistemas Operacionais</h3>
+            <li>Windows</li>
+            <div class="contaner-skills" id="windows"></div>
+            <li>Linux</li>
+            <div class="contaner-skills" id="linux"></div>
           </ul>
         </article>
       </section>
@@ -81,4 +95,5 @@
       </address>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
