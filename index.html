@@ -4,97 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinicius Mariano</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/082eeb24cf.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Vinícius Mariano - Portfólio</title>
   </head>
   <body>
+    <!-- Cabeçalho -->
     <header>
       <nav>
-        <a href="#container1">Perfil e Skills</a>
-        <a href="#container2">Projetos</a>
-        <a href="#">Contatos</a>
+        <h1>VMA</h1>
+        <ul>
+          <li><a href="#perfil">PERFIL</a></li>
+          <li><a href="#projetos">PROJETOS</a></li>
+          <li><a href="#contatos">CONTATOS</a></li>
+        </ul>
       </nav>
-      <div id="container_main">
-        <h1>Vinícius Mariano Afonso</h1>
-        <h5>Estudante de Engenharia de computação</h5>
-        <i id="seta" class="fa-solid fa-arrow-down fa-2x"></i>
-      </div>
+      <article id="container-nome">
+        <h1>Vinicius Mariano Afonso</h1>
+        <h2>Estudante de Engenharia de Computação</h2>
+      </article>
     </header>
+    <!-- Conteúdo -->
     <main>
-      <section id="container1" class="flex">
-        <div id="perfil" class="flex">
-          <h1>PERFIL</h1>
+      <!-- Perfil e Habilidades -->
+      <section id="perfil-habilidade">
+        <article id="pessoal" class="cards">
+          <h2>Perfil</h2>
           <p>
-            Olá, me chamo Vinícius e tenho 19 anos, sou estudante de Engenharia
-            de computação e gosto muito de aprender novas maneiras de resolver
-            problemas da minha área.<br />Me dou bem em trabalhos em grupo e
-            gosto de ajudar todos que estão no meu alcance, tenho afinidade com
-            ambientes de trabalho descontraídos
+            Sou estudante de Engenharia de Computação, sou apaixonado em
+            programação, tenho muita vontade de aprender desenvolvimento Web e
+            estou lutando para focar meus estudos, atualmente estou estudando
+            HTML,CSS e JavaScript, mas tenho foco em Back-End, gosto de
+            trabalhos em equipes e estou sempre disposto para ajudar todos que
+            estão ao meu alcance para aprendermos juntos. Atualmente trabalho na
+            Prefeitura Municipal de Hortolândia, já trabalhei realizando
+            atendimentos de suporte, e por enquanto aprendo e faço meus projetos
+            pessoais, para no futuro trabalhar como desenvolvedor de senioridade
+            júnior.
           </p>
-        </div>
-        <div id="habilidades" class="flex">
-          <h1>HABILIDADES</h1>
-          <div id="container-habilidades">
-            <img src="images/html.png" alt="" />
-            <img src="images/css.png" alt="" />
-            <img src="images/js.png" alt="" />
-            <img src="images/python.png" alt="" />
-          </div>
-          <h1>TECNOLOGIAS</h1>
-          <div class="flex">
-            <img src="images/windows.png" alt="" />
-            <img src="images/ubuntu.png" alt="" />
-            <img src="images/github.png" alt="" />
-          </div>
-        </div>
+        </article>
+        <article id="habilidade" class="cards">
+          <h2>Habilidades</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>SQL</li>
+          </ul>
+        </article>
       </section>
-      <section id="container2" class="flex">
-        <h1>PROJETOS</h1>
-        <div id="container-projetos">
-          <div>
-            <img src="images/projeto_cordel.PNG" alt="" />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ut
-              nihil animi pariatur nesciunt ratione, quae obcaecati, ipsa
-              veritatis, maxime repellendus tempora totam. Labore earum
-              blanditiis officiis, explicabo dolorum illum?
-            </p>
-          </div>
-          <div>
-            <img src="images/projeto_py.PNG" alt="" />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ut
-              nihil animi pariatur nesciunt ratione, quae obcaecati, ipsa
-              veritatis, maxime repellendus tempora totam. Labore earum
-              blanditiis officiis, explicabo dolorum illum?
-            </p>
-          </div>
-          <div>
-            <img src="images/projeto_cards.PNG" alt="" />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ut
-              nihil animi pariatur nesciunt ratione, quae obcaecati, ipsa
-              veritatis, maxime repellendus tempora totam. Labore earum
-              blanditiis officiis, explicabo dolorum illum?
-            </p>
-          </div>
-          <a class="flex" id="git" href="#"
-            >Mais projetos
-            <img src="images/right-arrow.png" alt="" />
-          </a>
-        </div>
+      <!-- Projetos -->
+      <section id="projetos">
+        <article><img src="#" alt="Projeto Cordel" /></article>
+        <article><img src="#" alt="Projeto Cards" /></article>
+        <article><img src="#" alt="Projeto Portfólio" /></article>
+      </section>
+      <!-- Contatos -->
+      <section id="contatos">
+        <ul>
+          <li><a href="#">E-mail</a></li>
+          <li><a href="#">Whatsapp</a></li>
+          <li><a href="#">Telefone</a></li>
+        </ul>
       </section>
     </main>
+    <!-- Rodapé -->
     <footer>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minus
-        nemo officiis aut. Ipsum, nihil! Quasi dignissimos sit reiciendis autem
-        error consequuntur rem a. Architecto suscipit a sunt officia repellat?
-      </p>
+      <address>
+        <p>
+          Feito por:
+          <a href="#"> Vinicius Mariano Afonso </a>
+          2022
+        </p>
+      </address>
     </footer>
   </body>
 </html>
