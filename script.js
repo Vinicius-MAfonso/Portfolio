@@ -1,9 +1,8 @@
-const btnNav = document.getElementById('btn-nav')
+const btnNav = document.querySelector('#btn-nav')
 
-toggleMenu = () => {
-  const nav = document.getElementById('nav')
+function toggleMenu() {
+  const nav = document.querySelector('#nav')
   nav.classList.toggle('active')
-  console.log('Ativo!')
 }
 
 btnNav.addEventListener('click', toggleMenu)

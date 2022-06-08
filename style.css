@@ -19,26 +19,12 @@ header{
   justify-items: center;
 }
 #intro{
-  grid-area:2;
+  grid-area: 2;
   display: flex;
   text-align: center;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  height:100%;
-}
-#intro h1{
-  word-wrap: break-word;
-  font-size: 1.8em;
-}
-#intro > a{
-  display: block;
-  border: 1.5px solid #0A4DA6;
-  padding: 10px 15px;
-  transition: .7s box-shadow;
-}
-#intro a:hover{
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 #title{
   display: flex;
@@ -46,40 +32,87 @@ header{
   gap: 10px;
   width: auto;
 }
+#title h1{
+  font-weight: bolder;
+  word-wrap: break-word;
+  font-size: 2em;
+}
+#intro > a{
+  border: 1.5px solid #0A4DA6;
+  padding: 10px 15px;
+  transition: .7s box-shadow;
+}
+#intro > a:hover{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
 #network{
-  grid-area:3;
-  width: 10%;
-  gap: 200px;
   display: flex;
+  grid-area:3;
+  width: 20%;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 /* Navbar fixa*/
-nav{
-  background-color: #F2F2F2;
+#nav{
   position: fixed;
   top:5%;
-  height: 200px;
+  height: auto;
+  width: auto;
+}
+#nav a{
+  display: block;
+  text-align: center;
+  padding: 2px;
+}
+#nav a:hover{
+  text-decoration: underline;
+}
+#btn-nav{
+  border: none;
+  width: 55px;
+  height: 40px;
+  transition: 0.4s all;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+#nav.active #btn-nav{
+  background-color: #85b2ec;
+}
+#btn-nav:hover{
+  background-color: #85b2ec;
+}
+#nav.active #menu{
+  display: flex;
+}
+#menu{
+  display: none;
+  margin-top: 0.5em;
+  height: 150px;
   width: 100px;
-  padding:10px;
+  background-color: #F2F2F2;
+  flex-direction: column;
+  justify-content: space-around;
   border-top: 1px solid #0A4DA6;
   border-right: 1px solid #0A4DA6;
   border-bottom: 1px solid #0A4DA6;
-  border-radius: 0px 5px 0px 0px;
+  border-radius: 0px 5px 5px 0px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
-#menu{
-  display: block;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-nav a:hover{
-  text-decoration: underline;
+@media  (max-height: 671px) {
+  #menu{
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    width: 300px;
+  }
 }
 /* Main */
+.flex{
 
+}
+.cards{
 
+}
+.containers{
+  
+}
