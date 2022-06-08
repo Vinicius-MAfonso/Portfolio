@@ -115,14 +115,18 @@ main{
   height: auto;
   width: 100%;
 }
+main h1{
+  font: normal normal bold 1.8em/1.2em Arial, Helvetica, sans-serif;
+  color: #056CF2;
+}
 section{
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  text-align: center;
- 
+  justify-content: center;
+  align-items: center;
 }
 article{
-  padding: 5%;
   background-color: #fff;
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
@@ -130,13 +134,28 @@ article{
 /* Sobre */
 
 #about-section article{
-  min-height: none;
-  min-width: 330px;
-  max-width: 530px;
-  gap: 15px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 2%;
+  
+  min-height: 650px;
+  max-height: 300px;
+  min-width: 300px;
+  max-width: 650px;
+  word-wrap: normal;
+  font-size: 1.2em;
+  line-height: 1.6em;
 }
 #about-section img{
+  height: 250px;
+  width: 250px;
   border: 2px solid black;
   border-radius: 50%;
+}
+#about-section p{
+
 }
 

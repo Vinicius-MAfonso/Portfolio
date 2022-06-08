@@ -6,3 +6,5 @@ function toggleMenu() {
 }
 
 btnNav.addEventListener('click', toggleMenu)
+
+function scroll() {}
