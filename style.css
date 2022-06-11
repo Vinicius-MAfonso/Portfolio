@@ -8,15 +8,6 @@
   font: normal normal normal 1em/1.2em Arial, Helvetica, sans-serif;
 }
 
-@media (max-width: 500px) {
-  *{
-    font-size: 0.98em;
-  }
-  article{
-    gap: 10px;
-  }
-}
-
 body{
   background-color: #F2F2F2;
 }
@@ -111,7 +102,7 @@ header{
   border-radius: 0px 5px 5px 0px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
-@media (max-height: 670px) {
+@media all and (max-height: 670px) {
   #menu{
     flex-direction: row;
     align-items: center;
@@ -121,58 +112,69 @@ header{
 }
 /* Main */
 main{
-  padding: 5%;
+  padding: 1.5em;
   width: 100%;
   height: auto;
 }
 main h1{
-  font: normal normal bold 1.8em/1.2em Arial, Helvetica, sans-serif;
+  font: normal normal bold 1.8em Arial, Helvetica, sans-serif;
   color: #056CF2;
-}
+} 
 section{
+  display: flex;
   margin-top: 20vh;
   height: auto;
-  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 article{
+  height: auto;
   display: flex;
+  flex: 1 1 150px;
   flex-direction: column;
   align-items: center;
-  text-align: justify;
+  text-align: center;
   justify-content: space-between;
-  word-wrap: normal;
-  font-size: 1.2em;
-  line-height: 1.6em;
   padding: 2%;
-  gap:50px;
+  gap:2em;
   background-color: #fff;
-  border-radius: 3px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  border-radius: 5px;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
-
 /* Sobre */
-
 #about-section article{
-  min-height: auto;
   max-height: 700px;
-  min-width: 300px;
+  min-width: auto;
   max-width: 600px;
 }
 #about-section img{
-  height: 250px;
-  width: 250px;
-  border: 2px solid black;
+  max-height: 250px;
+  max-width: 250px;
+  border: 2px solid #85b2ec;
   border-radius: 50%;
 }
 #about-section p{
-
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 @media (max-width: 500px) {
+  main h1{
+    font: normal normal normal 1.6em Arial, Helvetica, sans-serif;
+    color: #056CF2;
+  } 
   article{
-    gap: 10px;
+    gap: .5em;
+  }
+  #about-section img{
+    max-height: 200px;
+    max-width: 200px;
+    border: 2px solid #85b2ec;
+    border-radius: 50%;
+  }
+  #about-section p{
+    font-size: 1.1em;
   }
 }
 
