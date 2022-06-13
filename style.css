@@ -152,6 +152,7 @@ article{
 #about-section img{
   max-height: 250px;
   max-width: 250px;
+  padding:4px;
   border: 2px solid #85b2ec;
   border-radius: 50%;
 }
