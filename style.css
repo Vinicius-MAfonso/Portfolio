@@ -178,4 +178,21 @@ article{
     font-size: 1.1em;
   }
 }
+/* Perfil e habilidades */
+#perfil-section{
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#perfil-section article{
+  text-align: ;
+  max-height: 700px;
+  min-width: 900px;
+  max-width: 600px;
+}
+#perfil-section p{
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
 
